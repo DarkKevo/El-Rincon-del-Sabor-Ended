@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/e11594cd9f.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>El Rincon del Sabor</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="logo-navbar">
+                        <img src="img/logo_proyecto.png" alt="" />
+                    </div>
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="bar-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="nav-menu">
+                        <li>
+                            <a
+                                class="btn-scroll-view"
+                                data-target="banner-slider"
+                                href="#"
+                                >Inicio</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="btn-scroll-view"
+                                href="#"
+                                data-target="about1"
+                                >¿Quienes Somos?</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="btn-scroll-view"
+                                href="#"
+                                data-target="platillos"
+                                >Platillos Destacados</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="btn-scroll-view"
+                                href="#"
+                                data-target="clientes"
+                                >Clientes</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="btn-scroll-view"
+                                id="ordenar-boton"
+                                href="#"
+                                data-target="login"
+                                >Ordenar</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="banner-slider" id="banner-slider">
+                <div class="slide1-banner">
+                    <div class="texto-slide1">
+                        <p>
+                            Disfruta de Nuestra Variedad de Platillos y
+                            Promociones.
+                        </p>
+                        <p>Nos adaptamos a tus gustos, permitenos conocerte.</p>
+                    </div>
+                    <div class="boton-sh">
+                        <p class="a-sh" id="boton-slide1">Date el Gusto!</p>
+                    </div>
+                </div>
+                <div class="slide2-banner">
+                    <div class="boton-sh">
+                        <p class="a-sh" id="boton-slide2">Go Back</p>
+                    </div>
+                    <div class="form-banner-slider">
+                        <form id="form-contact" class="form-banner">
+                            <h2>Contacto</h2>
+                            <input
+                                type="text"
+                                name="nombre"
+                                id="nombre-b"
+                                placeholder="Nombre"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="text"
+                                name="Apellido"
+                                id="apellido-b"
+                                placeholder="Apellido"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                id="correo-b"
+                                placeholder="Correo Electronico"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="tel"
+                                name="telefono"
+                                id="telefono-b"
+                                placeholder="Telefono"
+                                autocomplete="off"
+                                required
+                            />
+                            <button class="boton-f" type="submit">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="about-me">
+                <div class="about1" id="about1">
+                    <div class="img-about">
+                        <img src="img/about_1.jpg" id="about_img" alt="" />
+                    </div>
+                    <div class="texto-about1">
+                        <p>
+                            Luego de 30 años, en el
+                            <strong>Rincon del Sabor</strong>
+                            seguimos siendo un lugar de exquisitez creado para
+                            complacerte
+                        </p>
+                    </div>
+                </div>
+                <div class="about2">
+                    <div class="texto-about2">
+                        <p>
+                            Nuestra Cocina forma parte de la cultura y el dia a
+                            dia de nuestros comensales.
+                        </p>
+                        <p>Edwar Smith</p>
+                        <p>Sub-Chef</p>
+                    </div>
+                    <div class="img-about">
+                        <img src="img/about_2.jpg" alt="" id="about_img" />
+                    </div>
+                </div>
+            </section>
+            <section class="platillos" id="platillos">
+                <div class="platillos-content">
+                    <h2>Lo Mejor de la Casa</h2>
+                    <div class="line"></div>
+                    <div class="carrusel-container">
+                        <div class="carrusel">
+                            <div class="item-c">
+                                <div class="img-contenedor">
+                                    <img src="img/plato1.jpg" alt="" />
+                                </div>
+                                <h3>Canelone de Pan</h3>
+                            </div>
+                            <div class="item-c">
+                                <div class="img-contenedor">
+                                    <img src="img/plato2.jpg" alt="" />
+                                </div>
+                                <h3>Arroz - Vegano</h3>
+                            </div>
+                            <div class="item-c">
+                                <div class="img-contenedor">
+                                    <img src="img/plato3.jpg" alt="" />
+                                </div>
+                                <h3>Sushi - Arroz</h3>
+                            </div>
+                            <div class="item-c">
+                                <div class="img-contenedor">
+                                    <img src="img/plato4.jpg" alt="" />
+                                </div>
+                                <h3>Paella con Arroz</h3>
+                            </div>
+                            <div class="item-c">
+                                <div class="img-contenedor">
+                                    <img src="img/plato5.jpg" alt="" />
+                                </div>
+                                <h3>Picado de Pulpo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="flecha-iz"><</p>
+                    <p class="flecha-de">></p>
+                </div>
+            </section>
+            <section class="delivery">
+                <div class="img-delivery">
+                    <img src="img/delivery.JPG" />
+                </div>
+                <div class="delivery-text">
+                    <h2>Delivery</h2>
+                    <div class="line2"></div>
+                    <p>
+                        En El Rincón del Sabor contamos con un excelente
+                        servicio de entrega inmediata
+                    </p>
+                </div>
+            </section>
+            <section class="clientes" id="clientes">
+                <div class="cliente">
+                    <div class="img-cliente">
+                        <img src="img/sara.JPG" class="redonda" />
+                    </div>
+                    <h2>Sara Dilmer</h2>
+                    <p>"Excelente atención al cliente y buena comida"</p>
+                </div>
+                <div class="cliente">
+                    <div class="img-cliente">
+                        <img src="img/hugh.JPG" class="redonda" />
+                    </div>
+                    <h2>Hugh Hackman</h2>
+                    <p>"Excelente lugar para estar con tu familia"</p>
+                </div>
+                <div class="cliente">
+                    <div class="img-cliente">
+                        <img src="img/chayanne.jpg" class="redonda" />
+                    </div>
+                    <h2>Chayanne</h2>
+                    <p>"El sabor de la comida es exquisito"</p>
+                </div>
+            </section>
+            <section class="login" id="login">
+                <div class="slide1-chef">
+                    <div class="boton-sh">
+                        <p class="a-sh" id="boton-login">Go Back!</p>
+                    </div>
+                    <div class="form-banner-slider">
+                        <form id="form-login-chef" class="form-banner">
+                            <h2>Log In</h2>
+                            <input
+                                type="text"
+                                name="nombre"
+                                id="nombre-chef"
+                                placeholder="Nombre"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="password"
+                                name="password"
+                                id="pass-chef"
+                                placeholder="Contraseña"
+                                autocomplete="off"
+                                required
+                            />
+                            <button class="boton-f" type="submit">
+                                Enviar
+                            </button>
+                            <p>¿No tiene una cuenta?</p>
+                            <p>
+                                Registrate
+                                <span class="blue" id="registrar-chef-boton"
+                                    >Aqui</span
+                                >
+                            </p>
+                        </form>
+                        <form id="form-register-chef" class="form-banner">
+                            <h2>Registrate</h2>
+                            <input
+                                type="text"
+                                name="nombre"
+                                id="nombre-chef-r"
+                                placeholder="Nombre"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="correo"
+                                id="correo-chef-r"
+                                placeholder="Correo Electronico"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="password"
+                                name="clave"
+                                id="clave-chef-r"
+                                placeholder="Clave"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="password"
+                                name="serial"
+                                id="serial-chef-r"
+                                placeholder="Serial de Activacion"
+                                autocomplete="off"
+                                required
+                            />
+                            <button class="boton-f" type="submit">
+                                Enviar
+                            </button>
+                            <p>¿Ya tienes una cuenta?</p>
+                            <p>
+                                <span class="blue" id="login-chef-boton"
+                                    >Inicia Sesion</span
+                                >
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="slide2-menu">
+                    <div class="Chefs">
+                        <p id="menu-chef">Chefs</p>
+                    </div>
+                    <div class="Clientes">
+                        <p id="menu-cliente">Clientes</p>
+                    </div>
+                </div>
+                <div class="slide3-cliente">
+                    <div class="boton-sh">
+                        <p class="a-sh" id="boton-login2">Go Back!</p>
+                    </div>
+                    <div class="form-banner-slider">
+                        <form id="form-login-cliente" class="form-banner">
+                            <h2>Log In</h2>
+                            <input
+                                type="text"
+                                name="nombre"
+                                id="nombre-cliente"
+                                placeholder="Nombre"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="password"
+                                name="password"
+                                id="pass-cliente"
+                                placeholder="Contraseña"
+                                autocomplete="off"
+                                required
+                            />
+                            <button class="boton-f" type="submit">
+                                Enviar
+                            </button>
+                            <p>¿No tiene una cuenta?</p>
+                            <p>
+                                Registrate
+                                <span class="blue" id="login-clientes-boton"
+                                    >Aqui</span
+                                >
+                            </p>
+                        </form>
+                        <form id="form-registrar-cliente" class="form-banner">
+                            <h2>Registrate</h2>
+                            <input
+                                type="text"
+                                name="nombre"
+                                id="nombre-cliente-r"
+                                placeholder="Nombre"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="text"
+                                name="apellido"
+                                id="apellido-cliente-r"
+                                placeholder="Apellido"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="correo"
+                                id="correo-cliente-r"
+                                placeholder="Correo Electrónico"
+                                autocomplete="off"
+                                required
+                            />
+                            <input
+                                type="password"
+                                name="password"
+                                id="pass-cliente-r"
+                                placeholder="Contraseña"
+                                autocomplete="off"
+                                required
+                            />
+                            <button class="boton-f" type="submit">
+                                Enviar
+                            </button>
+                            <p>¿Ya tiene una cuenta?</p>
+                            <p>
+                                Inicia Sesion
+                                <span class="blue" id="registrar-clientes-boton"
+                                    >Aqui</span
+                                >
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-img">
+                    <img src="img/footer.jpg" />
+                </div>
+                <div class="footer-text">
+                    <div class="logo-img">
+                        <img src="img/logo2.png" />
+                    </div>
+                    <div class="contactos">
+                        <div class="contactos-logo">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Telefono: 0212-5184680</p>
+                        </div>
+                        <div class="contactos-logo">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>
+                                Correo: atencionalcliente@elrincondelsabor.com
+                            </p>
+                        </div>
+                        <div class="contactos-logo">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Horario: Lunes a Domingo 10:00am a 12:00am</p>
+                        </div>
+                        <div class="contactos-logo">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Ubicanos: Av. Principal Las Mercedez</p>
+                        </div>
+                    </div>
+                    <div class="copyrigth">
+                        <p>
+                            © All Rigths Reserved 2022 | El Rincon del Sabor |
+                            Desingned By UVM Developers Team
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Some Scripts -->
+        <script type="text/javascript">
+            window.addEventListener('scroll', function () {
+                var nav = document.querySelector('nav');
+                nav.classList.toggle('sticky', window.scrollY > 0);
+            });
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/controller-animaciones.js"></script>
+        <script src="js/controller.js"></script>
+    </body>
+</html>

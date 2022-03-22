@@ -1,0 +1,267 @@
+/*Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Nova+Flat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Nova Flat', cursive;
+}
+header {
+    background-color: #e0ddaa;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+nav img {
+    width: 50%;
+}
+
+nav a {
+    padding: 10px 0px;
+    width: 150px;
+    border-radius: 50px;
+    color: black;
+    text-align: center;
+    background-color: #EEEDDE;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: #c7c49c;
+}
+
+
+nav h2 {
+    display: none;
+}
+
+.cliente-content {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/reservaciones.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top:4rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.253);
+    padding: 1rem;
+    padding-top:1rem;
+    box-shadow: 0px 2px 10px #00000050;
+    border-radius: 50px;
+    display: none;
+}
+#form-reservacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container input{
+    width: 60%;
+}
+
+.form-container h2 {
+    font-size: 40px;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: 100;
+}
+
+.verified {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.253);
+    padding: 3rem 0;
+    box-shadow: 0px 2px 10px #00000050;
+    border-radius: 50px;
+    display: none;
+}
+
+.verified h2 {
+    font-size: 40px;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: 100;
+}
+
+.verified i {
+    font-size: 60px;
+    color: rgb(34, 192, 34);
+}
+
+label {
+    font-size: 25px;
+    color: white;
+}
+#form-reservacion{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-reservacion input {
+    padding: 20px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+#form-reservacion button {
+    border: 2px solid white;
+    font-size: 25px;
+    padding: 20px 30px;
+    background-color: transparent;
+    border-radius: 100px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#form-reservacion button:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.tabla-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.253);
+    padding: 23px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    border-radius: 35px;
+}
+
+.tabla-cliente {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+}
+
+th,td {
+    width: 20%;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    padding: 10px;
+}
+
+th {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+td {
+    font-size: 10px;
+}
+@media screen and (min-width:412px){
+    th,td{
+        padding: 5px;
+    }
+    th{
+        font-size: 15px;
+    }
+    td{
+        font-size: 17px;
+    }
+}
+@media screen and (min-width:768px){
+     header{
+        height:130px;
+    }
+    nav img{
+        width: 30%;
+    }
+    nav a{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    #form-reservacion input{
+        font-size: 2.5rem;
+            width: 70%;
+    }
+    #form-reservacion button{
+        width: 70%;
+    }
+    th{
+        font-size: 25px;
+    }
+    td{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width:810px){
+    nav img{
+        width: 20%;
+    }
+    nav h2{
+        display: block;
+        font-size: 1.5rem;
+    }
+        nav a{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width:1007px){
+    header{
+        height: 100px;
+    }
+    .form-container{
+        width: 70%;
+        padding:2rem 0;
+    }
+    #form-reservacion input{
+        font-size: 1.5rem;
+    }
+    .form-container h2{
+        font-size: 2rem;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+    #form-reservacion button{
+        width: 50%;
+        font-size: 1.5rem;
+       padding:  5px 5px;
+    }
+}
+@media screen and (min-width:1024px){
+    header{
+        height: 130px;
+    }
+}
