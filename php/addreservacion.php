@@ -10,7 +10,7 @@ if (isset($_POST['fecha'])) {
     $fecha = $_POST['fecha'];
     $personas = $_POST['personas'];
 
-    $query = "INSERT INTO `rincon_sabor`.`reservaciones` (`Numero de Personas`, `Fecha_Hora`, `usuario`, `id`) VALUES ('$personas', '$fecha', '$nombre', '');";
+    $query = "INSERT INTO `rincon_sabor`.`reservaciones` (`Numero de Personas`, `Fecha_Hora`, `usuario`) VALUES ('$personas', '$fecha', '$nombre');";
 
     $resultado = mysqli_query($conexion, $query);
 

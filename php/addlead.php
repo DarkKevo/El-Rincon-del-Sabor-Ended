@@ -9,7 +9,7 @@ if (isset($_POST['nombre'])) {
     $correo = $_POST['correo'];
     $telefono = $_POST['telefono'];
 
-    $query = "INSERT INTO `rincon_sabor`.`leads` (`id`, `nombre`, `apellido`, `correo`, `telefono`) VALUES ('', '$nombre', '$apellido', '$correo', '$telefono');";
+    $query = "INSERT INTO `rincon_sabor`.`leads` (`nombre`, `apellido`, `correo`, `telefono`) VALUES ('$nombre', '$apellido', '$correo', '$telefono');";
 
     $resultado = mysqli_query($conexion, $query);
 

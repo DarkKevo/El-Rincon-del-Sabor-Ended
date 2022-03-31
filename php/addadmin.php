@@ -10,7 +10,7 @@ if (isset($_POST['serial'])) {
             $correo = $_POST['correo'];
             $clave = $_POST['clave'];
 
-            $query = "INSERT INTO `rincon_sabor`.`admins_data` (`nombre`, `correo`, `clave`, `id`) VALUES ('$nombre', '$correo', '$clave', '');";
+            $query = "INSERT INTO `rincon_sabor`.`admins_data` (`nombre`, `correo`, `clave`) VALUES ('$nombre', '$correo', '$clave');";
 
             $resultado = mysqli_query($conexion, $query);
 
