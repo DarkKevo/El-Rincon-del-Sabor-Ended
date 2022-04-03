@@ -83,7 +83,7 @@ nav img {
     top: 8rem;
     background-color: #eeedde;
     text-align: center;
-    transition: all.5s;
+    transition: all .5s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,6 +194,7 @@ nav img {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 52rem;
 }
 
 .form-banner-slider {
@@ -231,6 +232,25 @@ nav img {
     font-size: 20px;
     background-color: #cac57e;
     cursor: pointer;
+}
+
+.aviso {
+    padding: 30px;
+    display: none
+}
+
+.aviso h2 {
+    font-size: 30px;
+}
+.aviso p {
+    margin-top: 2rem;
+    font-size: 25px;
+}
+
+#codigo {
+    background-color: #a09b5c;
+    padding: 10px;
+    border-radius: 50px;
 }
 
 /*Seccion de Inicios de Sesion*/
@@ -681,9 +701,6 @@ footer {
     .banner-slider {
         height: 51rem;
     }
-    .slide2-banner {
-        padding-top: 56rem;
-    }
     .form-banner input {
         height: 50px;
     }
@@ -712,7 +729,7 @@ footer {
         height: 53rem;
     }
     .slide2-banner {
-        padding-top: 58rem;
+        padding-top: 0rem;
     }
     .form-banner input {
         height: 55px;
@@ -769,7 +786,7 @@ footer {
         margin-top: 4rem;
     }
     .slide2-banner {
-        padding-top: 60rem;
+        padding-top: 0rem;
     }
     .form-banner input {
         height: 60px;
@@ -821,6 +838,13 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .aviso h2 {
+        font-size: 45px;
+    }
+    .aviso p {
+        margin-top: 2rem;
+        font-size: 38px;
+    }
     nav img {
         width: 150px;
     }
@@ -841,7 +865,7 @@ footer {
         font-size: 4rem;
     }
     .slide2-banner {
-        padding-top: 68rem;
+        padding-top: 0rem;
     }
     .form-banner h2 {
         font-size: 4rem;
@@ -1023,6 +1047,13 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+    .aviso h2 {
+        font-size: 50px;
+    }
+    .aviso p {
+        margin-top: 2rem;
+        font-size: 42px;
+    }
     nav {
         height: 80px;
     }
@@ -1284,7 +1315,7 @@ footer {
     }
 
     .nav-menu li a {
-        font-size: 18px;
+        font-size: 16px;
     }
     .banner-slider {
         height: 50rem;
@@ -1421,6 +1452,13 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
+    .aviso h2 {
+        font-size: 58px;
+    }
+    .aviso p {
+        margin-top: 2rem;
+        font-size: 48px;
+    }
     .nav-menu li a {
         font-size: 20px;
     }

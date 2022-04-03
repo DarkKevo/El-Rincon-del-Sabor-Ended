@@ -109,7 +109,11 @@ $(document).ready(function () {
             console.log(response);
             $('#form-contact').trigger('reset');
         });
-
+        $('#form-contact').slideUp();
+        $('#codigo').html(codigos_al_azar());
+        setTimeout(function () {
+            $('.aviso').slideDown();
+        }, 500);
         e.preventDefault();
     });
     //Crear Usuarios Admin
@@ -235,4 +239,18 @@ document.addEventListener('click', function (event) {
 
 //Fin de Controlador de Scrolls
 
-//Controlador de Vista y Formulario de Cliente (Sesion)
+//Controlador de Funcion Generadora de Codigos al Azar
+
+function codigos_al_azar() {
+    //string
+    let codigo_de_descuento = '';
+    //caracteres disponibles para la generacion de codigo
+    let caracteres = '0123456789-ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let largo = caracteres.length;
+    //codigo de descuento de 6 caracteres
+    for (let i = 0; i < 6; i++) {
+        codigo_de_descuento += caracteres.charAt(Math.floor(Math.random() * largo)
+        );
+    }
+    return codigo_de_descuento;
+}
