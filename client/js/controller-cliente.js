@@ -7,7 +7,7 @@ $(document).ready(function () {
             personas: $('#personas').val(),
         };
         console.log(PostData);
-        $.post('addreservacion.php', PostData, function (response) {
+        $.post('../php/addreservacion.php', PostData, function (response) {
             Listar_Reservaciones();
             console.log(response);
             $('#form-reservacion').trigger('reset');
@@ -29,7 +29,7 @@ $(document).ready(function () {
     $(document).on('click', '.delete', function () {
         let element = $(this)[0].parentElement.parentElement;
         let id = $(element).attr('r-id');
-        $.post('eliminar_reservacion.php', { id: id }, function (response) {
+        $.post('../php/eliminar_reservacion.php', { id: id }, function (response) {
             console.log(response);
             Listar_Reservaciones();
         });
@@ -38,7 +38,7 @@ $(document).ready(function () {
     function Listar_Reservaciones() {
         $.ajax({
             type: 'GET',
-            url: 'listar_reservaciones.php',
+            url: '../php/listar_reservaciones.php',
             success: function (response) {
                 let reservaciones = JSON.parse(response);
                 let template = '';

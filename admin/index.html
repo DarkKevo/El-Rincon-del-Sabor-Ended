@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/e11594cd9f.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>Administrador</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="Chefs">
+                <p id="menu-chef">Chefs</p>
+            </div>
+            <div class="slide1-chef">
+                <div class="boton-sh">
+                    <p class="a-sh" id="boton-login">Go Back!</p>
+                </div>
+                <div class="form-banner-slider">
+                    <form id="form-login-chef" class="form-banner">
+                        <h2>Log In</h2>
+                        <input
+                            type="text"
+                            name="nombre"
+                            id="nombre-chef"
+                            placeholder="Nombre"
+                            autocomplete="off"
+                            required
+                        />
+                        <input
+                            type="password"
+                            name="password"
+                            id="pass-chef"
+                            placeholder="Contraseña"
+                            autocomplete="off"
+                            required
+                        />
+                        <button class="boton-f" type="submit">Enviar</button>
+                        <p>¿No tiene una cuenta?</p>
+                        <p>
+                            Registrate
+                            <span class="blue" id="registrar-chef-boton"
+                                >Aqui</span
+                            >
+                        </p>
+                    </form>
+                    <form id="form-register-chef" class="form-banner">
+                        <h2>Registrate</h2>
+                        <input
+                            type="text"
+                            name="nombre"
+                            id="nombre-chef-r"
+                            placeholder="Nombre"
+                            autocomplete="off"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="correo"
+                            id="correo-chef-r"
+                            placeholder="Correo Electronico"
+                            autocomplete="off"
+                            required
+                        />
+                        <input
+                            type="password"
+                            name="clave"
+                            id="clave-chef-r"
+                            placeholder="Clave"
+                            autocomplete="off"
+                            required
+                        />
+                        <input
+                            type="password"
+                            name="serial"
+                            id="serial-chef-r"
+                            placeholder="Serial de Activacion"
+                            autocomplete="off"
+                            required
+                        />
+                        <button class="boton-f" type="submit">Enviar</button>
+                        <p>¿Ya tienes una cuenta?</p>
+                        <p>
+                            <span class="blue" id="login-chef-boton"
+                                >Inicia Sesion</span
+                            >
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/controller-administrador.js"></script>
+    </body>
+</html>

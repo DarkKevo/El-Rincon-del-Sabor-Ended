@@ -5,7 +5,7 @@
     
     $active = $_SESSION['usuario'];
     if ($active == null || $active == '') {
-        header("location:error.html");
+        header("location:error.php");
     }
 
 ?>
@@ -26,7 +26,7 @@
             <nav>
                 <img src="../img/logo_proyecto.png" />
                 <h2>Bienvenido Administrador <?php echo  $_SESSION['usuario'] ?></h2>
-                <a href="log_out.php">Log out</a>
+                <a href="../php/log_out.php">Log out</a>
             </nav>
         </header>
         <section class="cliente-content">
@@ -67,6 +67,6 @@
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"
         ></script>
-        <script src="../js/controller-administrador.js"></script>
+        <script src="../js/controller-administrador2.js"></script>
     </body>
 </html>

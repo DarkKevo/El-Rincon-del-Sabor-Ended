@@ -5,23 +5,30 @@ $(document).ready(function () {
     $(document).on('click', '.delete', function () {
         let element = $(this)[0].parentElement.parentElement;
         let id = $(element).attr('r-id');
-        $.post('eliminar_reservacion.php', { id: id }, function (response) {
-            console.log(response);
-            Listar_Reservaciones();
-        });
+        $.post(
+            '../php/eliminar_reservacion.php',
+            { id: id },
+            function (response) {
+                console.log(response);
+                Listar_Reservaciones();
+            }
+        );
     });
 
     //Editar Reservaciones
-
     $(document).on('click', '.edit', function () {
         let element = $(this)[0].parentElement.parentElement;
         let id = $(element).attr('r-id');
-        $.post('single-reservacion.php', { id: id }, function (response) {
-            const reservacion = JSON.parse(response);
-            $('#fecha').val(reservacion.fecha);
-            $('#personas').val(reservacion.personas);
-            $('#id_edit').val(reservacion.id);
-        });
+        $.post(
+            '../php/single-reservacion.php',
+            { id: id },
+            function (response) {
+                const reservacion = JSON.parse(response);
+                $('#fecha').val(reservacion.fecha);
+                $('#personas').val(reservacion.personas);
+                $('#id_edit').val(reservacion.id);
+            }
+        );
     });
 
     $('#form-reservacion').submit(function (e) {
@@ -31,7 +38,7 @@ $(document).ready(function () {
             id: $('#id_edit').val(),
         };
         console.log(PostData);
-        $.post('edit.php', PostData, function (response) {
+        $.post('../php/edit.php', PostData, function (response) {
             Listar_Reservaciones();
             console.log(response);
             $('#form-reservacion').trigger('reset');
@@ -42,7 +49,7 @@ $(document).ready(function () {
     function Listar_Reservaciones() {
         $.ajax({
             type: 'GET',
-            url: 'listar_admin.php',
+            url: '../php/listar_admin.php',
             success: function (response) {
                 let reservaciones = JSON.parse(response);
                 let template = '';
@@ -78,4 +85,5 @@ $(document).ready(function () {
             $('.verified').slideDown();
         }, 500);
     });
+
 });

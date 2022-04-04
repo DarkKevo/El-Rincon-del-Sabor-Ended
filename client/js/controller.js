@@ -22,29 +22,20 @@ izquierda.addEventListener('click', Deslizar_izquierda);
 //Controlador del Inicio de Sesion (Slider)
 
 const slider_sesion = document.querySelector('.login');
-const izquierda_sesion = document.querySelector('#menu-chef');
 const derecha_sesion = document.querySelector('#menu-cliente');
-
-const boton_login1 = document.querySelector('#boton-login');
 
 const boton_login2 = document.querySelector('#boton-login2');
 
-function Deslizar_izquierda_sesion() {
-    slider_sesion.style.marginLeft = '0%';
-}
 function Deslizar_derecha_sesion() {
-    slider_sesion.style.marginLeft = '-200%';
-}
-
-function Normally() {
     slider_sesion.style.marginLeft = '-100%';
 }
 
-izquierda_sesion.addEventListener('click', Deslizar_izquierda_sesion);
+function Normally() {
+    slider_sesion.style.marginLeft = '0%';
+}
 
 derecha_sesion.addEventListener('click', Deslizar_derecha_sesion);
 
-boton_login1.addEventListener('click', Normally);
 boton_login2.addEventListener('click', Normally);
 
 //Fin de Controlador de Inicio de Sesion
@@ -116,23 +107,6 @@ $(document).ready(function () {
         }, 500);
         e.preventDefault();
     });
-    //Crear Usuarios Admin
-    $('#form-register-chef').submit(function (e) {
-        const PostData = {
-            nombre: $('#nombre-chef-r').val(),
-            correo: $('#correo-chef-r').val(),
-            clave: $('#clave-chef-r').val(),
-            serial: $('#serial-chef-r').val(),
-        };
-
-        $.post('php/addadmin.php', PostData, function (response) {
-            console.log(response);
-            alert(response);
-            $('#form-register-chef').trigger('reset');
-        });
-
-        e.preventDefault();
-    });
     //Crear Usuarios Cliente
     $('#form-registrar-cliente').submit(function (e) {
         const PostData = {
@@ -151,24 +125,6 @@ $(document).ready(function () {
 
         e.preventDefault();
     });
-    //Inicio de Sesion de Admin
-    $('#form-login-chef').submit(function (e) {
-        const PostData = {
-            nombre: $('#nombre-chef').val(),
-            clave: $('#pass-chef').val(),
-        };
-
-        $.post('php/verificar_adm.php', PostData, function (response) {
-            if (response == 'true') {
-                $(location).attr('href', 'php/administrador.php');
-            } else {
-                alert('Usuario / Contraseña Invalidos');
-            }
-            $('#form-login-chef').trigger('reset');
-        });
-
-        e.preventDefault();
-    });
     //Inicio de Sesion de Cliente
     $('#form-login-cliente').submit(function (e) {
         const PostData = {
@@ -178,7 +134,7 @@ $(document).ready(function () {
 
         $.post('php/verificar_cliente.php', PostData, function (response) {
             if (response == 'true') {
-                $(location).attr('href', 'php/cliente.php');
+                $(location).attr('href', 'views/cliente.php');
             } else {
                 alert('Usuario / Contraseña Invalidos');
             }
@@ -194,20 +150,6 @@ $(document).ready(function () {
 //Controlador de Animación de los Formularios
 
 $(document).ready(function () {
-    $('#registrar-chef-boton').click(function () {
-        $('#form-login-chef').slideUp();
-        setTimeout(function () {
-            $('#form-register-chef').slideDown();
-        }, 500);
-    });
-
-    $('#login-chef-boton').click(function () {
-        $('#form-register-chef').slideUp();
-        setTimeout(function () {
-            $('#form-login-chef').slideDown();
-        }, 500);
-    });
-
     $('#login-clientes-boton').click(function () {
         $('#form-login-cliente').slideUp();
         setTimeout(function () {

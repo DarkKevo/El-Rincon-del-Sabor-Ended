@@ -156,7 +156,7 @@ nav img {
 
 .slide1-banner .texto-slide1 {
     color: white;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .boton-sh {
@@ -259,17 +259,9 @@ nav img {
     grid-area: login;
     height: 50rem;
     display: flex;
-    width: 300%;
+    width: 200%;
     transition: all 0.5s;
-    margin-left: -100%;
-}
-
-.slide1-chef {
-    width: 100%;
-    background-image: url('../img/chefs_login.jpg');
-    background-position: center;
-    background-size: cover;
-    flex-direction: column-reverse;
+    margin-left: 0%;
 }
 .form-banner-slider {
     width: 90%;
@@ -285,7 +277,6 @@ nav img {
 .login .form-banner button {
     margin-bottom: 1rem;
 }
-.login .slide1-chef .a-sh,
 .login .slide3-cliente .a-sh {
     margin-bottom: 2rem;
 }
@@ -295,18 +286,25 @@ nav img {
 }
 .slide2-menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 103%;
     height: 100%;
 }
 
-.Chefs,
 .Clientes {
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.Clientes h2 {
+    margin-bottom: 2rem;
+    font-size: 35px;
+    font-weight: 300;
 }
 
 .Chefs p,
@@ -828,7 +826,6 @@ footer {
     .login {
         height: 58rem;
     }
-    .login .slide1-chef .a-sh,
     .login .slide3-cliente .a-sh {
         margin-bottom: 4rem;
     }
@@ -844,6 +841,9 @@ footer {
     .aviso p {
         margin-top: 2rem;
         font-size: 38px;
+    }
+    .Clientes h2 {
+        font-size: 45px
     }
     nav img {
         width: 150px;
@@ -972,7 +972,6 @@ footer {
     .form-banner button {
         font-size: 2rem;
     }
-    .login .slide1-chef .a-sh,
     .login .slide3-cliente .a-sh {
         margin-bottom: 1rem;
     }
@@ -1037,7 +1036,6 @@ footer {
     .login {
         height: 68rem;
     }
-    .login .slide1-chef .a-sh,
     .login .slide3-cliente .a-sh {
         margin-bottom: 4rem;
     }
@@ -1241,23 +1239,15 @@ footer {
         flex-direction: row;
         height: 1005;
     }
-    .Chefs,
     .Clientes {
         height: 100%;
-    }
-    .slide1-chef {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding-top: 0;
     }
     .slide2-menu {
         width: 103%;
         height: 100%;
     }
-    .Chefs,
     .Clientes {
-        width: 50%;
+        width: 100%;
         height: 100%;
     }
     .slide3-cliente {
@@ -1428,22 +1418,14 @@ footer {
         flex-direction: row;
         height: 1005;
     }
-    .Chefs,
     .Clientes {
         height: 100%;
-    }
-    .slide1-chef {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-top: 0;
     }
     .slide3-cliente {
         display: flex;
         flex-direction: row-reverse;
         padding-top: 0;
     }
-
     footer {
         height: 50rem;
         display: flex;
