@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+}
+
 .container {
     min-width: 375px;
     min-height: 800px;
